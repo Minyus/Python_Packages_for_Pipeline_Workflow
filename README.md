@@ -29,14 +29,14 @@ DAG (workflow) of tasks is defined by Python code (or optionally YAML using unof
 ### Pros:
 
 - Provides strong scheduling feature.
-- Provides rich GUI with features including DAG visualization, execution progress monitoring, and trigger execution.
+- Provides rich GUI with features including DAG visualization, execution progress monitoring, scheduling, and triggering.
 - Provides distributed computing option (using Celery).
 - DAG definition is modular; independent from processing functions.
 - Workflow can be nested using `SubDagOperator`.
 
 ### Cons:
 
-- Stores metadata in a database (MySQL or Postgres recommended by Airflow) and data can be shared among dependent tasks only via the database (using features called "XCom" or "Variable").
+- Data can be shared among dependent tasks only via a database (using features called "XCom", "Variable", or "Hook").
 - You need to manage passing/sharing of unstructured data (e.g. image, video, pickle, etc.), if any, outside of Airflow.
 - Does not support automatic pipeline resuming option using the intermediate data files.
 - You need to write file/database access (read/write) code. 
