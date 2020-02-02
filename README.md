@@ -15,7 +15,6 @@ This article compares the following open-source Python packages for pipeline/wor
 All of these packages support:
 - Parallel execution
 - Log output
-- DAG visualization
 
 Disclaimer: I'm the developer of PipelineX.
 
