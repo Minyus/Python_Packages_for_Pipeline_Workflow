@@ -131,7 +131,7 @@ Pipeline is defined in YAML or Python code.
 
 https://github.com/argoproj/argo
 
-Use Kubernetes/Docker for each task in the pipeline
+Uses Kubernetes/Docker for each task in the pipeline
 
 ### Kubeflow Pipelines
 
