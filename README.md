@@ -155,7 +155,7 @@ Pipeline is defined in YAML or Python code.
 - 👍: good
 - 👍👍: better
 
-| Package                                                                 | Airflow | Luigi&nbsp;&nbsp; | Gokart | Metaflow | Kedro&nbsp;&nbsp; | PipelineX       |
+| Package                                                                 | Airflow | Luigi&nbsp;&nbsp;&nbsp; | Gokart | Metaflow | Kedro&nbsp;&nbsp;&nbsp; | PipelineX       |
 |-------------------------------------------------------------------------|---------|-------|--------|----------|-------|-----------------|
 | Wrapped packages                                                        |         |       | Luigi  |          |       | Kedro, MLflow   |
 | Easiness/flexibility to define DAG                                      |         |       | 👍      | 👍        | 👍     | 👍👍             |
