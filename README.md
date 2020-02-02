@@ -171,7 +171,7 @@ Pipeline is defined in YAML or Python code.
 | Distributed parallel execution with Celery                              | 👍👍       |       |        |          |       |                 |
 | Visualization of DAG                                                    | 👍👍       | 👍     | 👍      |          | 👍     | 👍               |
 | Monitoring in GUI                                                       | 👍👍     | 👍     | 👍      |          |       |                 |
-| "Scheduling, Triggering in GUI"                                         | 👍       |       |        |          |       |                 |
+| Scheduling, Triggering in GUI                                           | 👍       |       |        |          |       |                 |
 | Notification to Slack                                                   | 👍       |       | 👍      |          |       |                 |
 
 
