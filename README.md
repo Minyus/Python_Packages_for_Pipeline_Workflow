@@ -1,24 +1,12 @@
-# Python packages for pipeline/workflow development: Airflow, Luigi, Gokart, Metaflow, Kedro, PipelineX
+# Comparison of Python pipeline packages: Airflow, Luigi, Gokart, Metaflow, Kedro, PipelineX
 
 
-This article compares the following open-source Python packages for pipeline/workflow development:
+This article compares open-source Python packages for pipeline/workflow development: Airflow, Luigi, Gokart, Metaflow, Kedro, PipelineX.
 
-- Airflow: https://github.com/apache/airflow
-- Luigi: https://github.com/spotify/luigi
-- Gokart: https://github.com/m3dev/gokart
-- Metaflow: https://github.com/Netflix/metaflow
-- Kedro: https://github.com/quantumblacklabs/kedro
-- PipelineX: https://github.com/Minyus/pipelinex
-
-
-
-All of these packages support:
-- Parallel execution
-- Log output
+This article is based on my understanding. Please let me know if you find anything inaccurate. 
 
 Disclaimer: I'm the developer of PipelineX.
 
-Note: This article is based on my understanding. Please let me know if you find anything inaccurate. 
 
 ## Airflow 
 
