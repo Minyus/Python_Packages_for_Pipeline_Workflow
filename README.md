@@ -187,13 +187,13 @@ Manages Hadoop jobs
     - https://github.com/spotify/luigi
     - https://luigi.readthedocs.io/en/stable/api/luigi.contrib.html
     - https://www.m3tech.blog/entry/2018/11/12/110000
-
 - Gokart
     - https://github.com/m3dev/gokart
     - https://www.m3tech.blog/entry/2019/09/30/120229
     - https://qiita.com/Hase8388/items/8cf0e5c77f00b555748f
 - Metaflow
     - https://github.com/Netflix/metaflow
+    - https://docs.metaflow.org/metaflow/basics
     - https://medium.com/bigdatarepublic/a-review-of-netflixs-metaflow-65c6956e168d
 - Kedro
     - https://github.com/quantumblacklabs/kedro
