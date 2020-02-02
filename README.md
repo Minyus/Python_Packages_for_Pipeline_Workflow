@@ -1,4 +1,4 @@
-# Python packages for pipeline/workflow development: Airflow, Luigi, Gokart, Kedro, PipelineX
+# Python packages for pipeline/workflow development: Airflow, Luigi, Gokart, Metaflow, Kedro, PipelineX
 
 
 This article compares the following open-source Python packages for pipeline/workflow development:
@@ -6,8 +6,11 @@ This article compares the following open-source Python packages for pipeline/wor
 - Airflow: https://github.com/apache/airflow
 - Luigi: https://github.com/spotify/luigi
 - Gokart: https://github.com/m3dev/gokart
+- Metaflow: https://github.com/Netflix/metaflow
 - Kedro: https://github.com/quantumblacklabs/kedro
 - PipelineX: https://github.com/Minyus/pipelinex
+
+
 
 All of these packages support:
 - Parallel execution
@@ -26,18 +29,19 @@ DAG (workflow) of tasks is defined by Python code (or optionally YAML using unof
 
 ### Pros:
 
-- Airflow provides strong scheduling feature.
-- Airflow provides GUI in which users can monitor workflow execution progress and trigger execution.
-- Airflow provides distributed computing option (using Celery).
+- Provides strong scheduling feature.
+- Provides rich GUI with features including DAG visualization, execution progress monitoring, and trigger execution.
+- Provides distributed computing option (using Celery).
 - DAG definition is modular; independent from processing functions.
 - Workflow can be nested using `SubDagOperator`.
 
 ### Cons:
 
-- Airflow stores metadata in a database (MySQL or Postgres recommended by Airflow) and data can be shared among dependent tasks only via the database (using features called "XCom" or "Variable").
+- Stores metadata in a database (MySQL or Postgres recommended by Airflow) and data can be shared among dependent tasks only via the database (using features called "XCom" or "Variable").
 - You need to manage passing/sharing of unstructured data (e.g. image, video, pickle, etc.), if any, outside of Airflow.
-- Airflow does not support automatic pipeline resuming option using the intermediate data files.
+- Does not support automatic pipeline resuming option using the intermediate data files.
 - You need to write file/database access (read/write) code. 
+- Does not support automatic pipeline resuming option using the intermediate data files or databases.
 
 Airflow might be good for production, but apparently not for rapid experimentation. 
 
@@ -46,14 +50,14 @@ Airflow might be good for production, but apparently not for rapid experimentati
 
 https://github.com/spotify/luigi
 
-Pipeline is defined by task class methods (`requires`, `output`, `run`) in Python code.
+Pipeline is defined by child classes of `Task` with 3 defined class methods (`requires`, `output`, `run`) in Python code.
 
 ### Pros:
 
-- Support automatic pipeline resuming option using the intermediate data files in local or cloud (AWS, GCP, Azure) as well as databases as defined in `Task.output` method using `Target` class.
+- Support automatic pipeline resuming option using the intermediate data files in local or cloud (AWS, GCP, Azure) or databases as defined in `Task.output` method using `Target` class.
 - You can write code so any data can be passed between dependent tasks.
-- Luigi provides GUI in which users can monitor the pipeline.
-- Luigi supports Hadoop.
+- Provides GUI with features including DAG visualization, execution progress monitoring.
+- Supports Hadoop.
 
 ### Cons:
 
@@ -73,7 +77,7 @@ Pipeline is defined by task class methods (`requires`, `output`, `run`) in Pytho
 
 ### Pros: 
 
-- Gokart provides built-in file access (read/write) wrappers as `FileProcessor` classes for pickle, npz, gz, txt, csv, tsv, json, xml.
+- Provides built-in file access (read/write) wrappers as `FileProcessor` classes for pickle, npz, gz, txt, csv, tsv, json, xml.
 - Save parameters for each experiment to assure reproducibility. Viewer called `thunderbolt` (https://github.com/m3dev/thunderbolt) can be used.
 - Syntactic sugar for Luigi's `requires` class method using class decorator. 
 
@@ -81,6 +85,26 @@ Pipeline is defined by task class methods (`requires`, `output`, `run`) in Pytho
 ### Cons:
 
 - Supported data formats for file access wrappers are limited.
+
+
+## Metaflow
+
+https://github.com/Netflix/metaflow
+
+Pipeline is defined as a child class `FlowSpec` with class methods with `step` decorators and call `next` method in the end to specify the next task in Python code.
+
+### Pros:
+
+- Intuitive to define pipeline dependencies.
+
+### Cons:
+
+- You need to write file/database access (read/write) code.
+- Pipeline definition is not modular. You need to modify the task classes to reuse in future projects.
+- Each Task class will be the project-specific and it will be difficult to reuse the Luigi tasks in future projects without modifying.
+- Does not support GUI. 
+- Not much support for GCP & Azure.
+- Does not support automatic pipeline resuming option using the intermediate data files or databases.
 
 
 ## Kedro
@@ -96,10 +120,11 @@ Pipeline is defined in Python code (an independent Python module).
 - File access functionality is modular; independent from processing functions. Can be configured in YAML (`DataCatalog`).
 - Pipeline definition is modular; independent from processing functions.
 - Pipelines can be nested.
+- GUI (`kedro-viz`) provides DAG visualization feature.
 
 ### Cons:
-- Kedro does not support automatic pipeline resuming option using the intermediate data files.
-- Kedro's GUI (`kedro-viz`) does not include execution monitoring.
+- Does not support automatic pipeline resuming option using the intermediate data files or databases.
+- GUI (`kedro-viz`) does not provide execution progress monitoring feature.
 - Kedro installs package dependencies which are not used in many cases (e.g. pyarrow) as defined in the requirements.txt.
 
 
@@ -112,7 +137,7 @@ PipelineX works on top of Kedro.
 Pipeline is defined in YAML or Python code.
 
 ### Pros:
-- PipelineX supports automatic pipeline resuming option using the intermediate data files.
+- Supports automatic pipeline resuming option using the intermediate data files or databases.
 - Optional syntactic sugar for Kedro Pipeline. (e.g. Sequential API similar to Keras & PyTorch)
 - Optional syntactic sugar for Kedro DataSet catalog. (e.g. Use file name in file path as the dataset instance name)
 - Backward-compatible to pure Kedro.
@@ -167,6 +192,9 @@ Manages Hadoop jobs
     - https://github.com/m3dev/gokart
     - https://www.m3tech.blog/entry/2019/09/30/120229
     - https://qiita.com/Hase8388/items/8cf0e5c77f00b555748f
+- Metaflow
+    - https://github.com/Netflix/metaflow
+    - https://medium.com/bigdatarepublic/a-review-of-netflixs-metaflow-65c6956e168d
 - Kedro
     - https://github.com/quantumblacklabs/kedro
     - https://kedro.readthedocs.io/en/latest/kedro.io.html#data-sets
