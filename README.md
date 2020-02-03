@@ -81,7 +81,7 @@ Metaflow enables you to define your pipeline as a child class of `FlowSpec` that
 
 ### Pros:
 
-- Intuitive to define pipeline dependencies.
+- Integration with AWS services (Especially AWS Batch).
 
 ### Cons:
 
@@ -207,6 +207,7 @@ Manages Hadoop jobs
 - Metaflow
     - https://github.com/Netflix/metaflow
     - https://docs.metaflow.org/metaflow/basics
+    - https://docs.metaflow.org/metaflow/scaling
     - https://medium.com/bigdatarepublic/a-review-of-netflixs-metaflow-65c6956e168d
 - Kedro
     - https://github.com/quantumblacklabs/kedro
