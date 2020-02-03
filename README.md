@@ -3,8 +3,6 @@
 
 This article compares open-source Python packages for pipeline/workflow development: Airflow, Luigi, Gokart, Metaflow, Kedro, PipelineX.
 
-Please kindly let me know if you find anything inaccurate. 
-
 Disclaimer: I'm the developer of PipelineX.
 
 In this article, terms of "pipeline", "workflow", and "DAG" are used almost interchangeably. 
@@ -227,3 +225,8 @@ Manages Hadoop jobs
     - https://medium.com/better-programming/airbnbs-airflow-versus-spotify-s-luigi-bd4c7c2c0791
     - https://www.quora.com/Which-is-a-better-data-pipeline-scheduling-platform-Airflow-or-Luigi
  
+## Inaccuracies
+
+Please kindly let me know if you find anything inaccurate. 
+
+Pull requests for https://github.com/Minyus/Python_Packages_for_Pipeline_Workflow/blob/master/README.md are welcome.
