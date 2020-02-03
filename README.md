@@ -48,7 +48,7 @@ Luigi enables you to define your pipeline by child classes of `Task` with 3 clas
 ### Cons:
 
 - You need to write file/database access (read/write) code.
-- Pipeline definition is not modular. You need to modify the task classes to reuse in future projects.
+- Pipeline definition, task processing (Transform of ETL), and data access (Extract&Load of ETL) are tightly coupled and not modular. You need to modify the task classes to reuse in future projects.
 
 
 ## Gokart
@@ -69,7 +69,8 @@ This feature is useful for experimentation with various parameter sets.
 
 ### Cons:
 
-- Supported data formats for file access wrappers are limited.
+- Supported data formats for file access wrappers are limited. You need to write file/database access (read/write) code to use unsupported formats.
+- Pipeline definition and task processing (Transform of ETL) are tightly coupled and not modular. You need to modify the task classes to reuse in future projects.
 
 
 ## Metaflow
