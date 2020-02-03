@@ -201,36 +201,42 @@ https://github.com/azkaban/azkaban
 Manages Hadoop jobs.
 
 
-## References:
+## References
 
-- Airflow
-    - https://github.com/apache/airflow
-    - https://airflow.apache.org/docs/stable/howto/initialize-database.html
-    - https://medium.com/datareply/integrating-slack-alerts-in-airflow-c9dcd155105
-- Luigi
-    - https://github.com/spotify/luigi
-    - https://luigi.readthedocs.io/en/stable/api/luigi.contrib.html
-    - https://www.m3tech.blog/entry/2018/11/12/110000
-- Gokart
-    - https://github.com/m3dev/gokart
-    - https://www.m3tech.blog/entry/2019/09/30/120229
-    - https://qiita.com/Hase8388/items/8cf0e5c77f00b555748f
-- Metaflow
-    - https://github.com/Netflix/metaflow
-    - https://docs.metaflow.org/metaflow/basics
-    - https://docs.metaflow.org/metaflow/scaling
-    - https://medium.com/bigdatarepublic/a-review-of-netflixs-metaflow-65c6956e168d
-- Kedro
-    - https://github.com/quantumblacklabs/kedro
-    - https://kedro.readthedocs.io/en/latest/03_tutorial/04_create_pipelines.html
-    - https://kedro.readthedocs.io/en/latest/kedro.io.html#data-sets
-    - https://medium.com/mhiro2/building-pipeline-with-kedro-for-ml-competition-63e1db42d179
-- PipelineX
-    - https://github.com/Minyus/pipelinex
-- Airflow vs Luigi
-    - https://towardsdatascience.com/data-pipelines-luigi-airflow-everything-you-need-to-know-18dc741449b7
-    - https://medium.com/better-programming/airbnbs-airflow-versus-spotify-s-luigi-bd4c7c2c0791
-    - https://www.quora.com/Which-is-a-better-data-pipeline-scheduling-platform-Airflow-or-Luigi
+Airflow
+- https://github.com/apache/airflow
+- https://airflow.apache.org/docs/stable/howto/initialize-database.html
+- https://medium.com/datareply/integrating-slack-alerts-in-airflow-c9dcd155105
+
+Luigi
+- https://github.com/spotify/luigi
+- https://luigi.readthedocs.io/en/stable/api/luigi.contrib.html
+- https://www.m3tech.blog/entry/2018/11/12/110000
+
+Gokart
+- https://github.com/m3dev/gokart
+- https://www.m3tech.blog/entry/2019/09/30/120229
+- https://qiita.com/Hase8388/items/8cf0e5c77f00b555748f
+
+Metaflow
+- https://github.com/Netflix/metaflow
+- https://docs.metaflow.org/metaflow/basics
+- https://docs.metaflow.org/metaflow/scaling
+- https://medium.com/bigdatarepublic/a-review-of-netflixs-metaflow-65c6956e168d
+
+Kedro
+- https://github.com/quantumblacklabs/kedro
+- https://kedro.readthedocs.io/en/latest/03_tutorial/04_create_pipelines.html
+- https://kedro.readthedocs.io/en/latest/kedro.io.html#data-sets
+- https://medium.com/mhiro2/building-pipeline-with-kedro-for-ml-competition-63e1db42d179
+    
+PipelineX
+- https://github.com/Minyus/pipelinex
+    
+Airflow vs Luigi
+- https://towardsdatascience.com/data-pipelines-luigi-airflow-everything-you-need-to-know-18dc741449b7
+- https://medium.com/better-programming/airbnbs-airflow-versus-spotify-s-luigi-bd4c7c2c0791
+- https://www.quora.com/Which-is-a-better-data-pipeline-scheduling-platform-Airflow-or-Luigi
  
 ## Inaccuracies
 
