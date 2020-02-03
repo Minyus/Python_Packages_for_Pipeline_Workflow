@@ -22,6 +22,7 @@ Airflow enables you to define your DAG (workflow) of tasks in Python code (an in
 - Provides distributed computing option (using Celery).
 - DAG definition is modular; independent from processing functions.
 - Workflow can be nested using `SubDagOperator`.
+- Supports Slack notification.
 
 ### Cons:
 
@@ -65,7 +66,7 @@ In addition to Luigi's advantages:
 - Rerun tasks upon parameter change based on hash string unique to the parameter set in each intermediate file name. 
 This feature is useful for experimentation with various parameter sets.
 - Syntactic sugar for Luigi's `requires` class method using class decorator. 
-
+- Supports Slack notification.
 
 ### Cons:
 
@@ -98,7 +99,7 @@ Metaflow enables you to define your pipeline as a child class of `FlowSpec` that
 https://github.com/quantumblacklabs/kedro
 
 Released in May 2019 by QuantumBlack/McKinsey & Company.
-Kedro enables you to define pipelines in Python code (an independent Python module).
+Kedro enables you to define pipelines using `Pipeline` class in Python code (an independent Python module).
 
 ### Pros:
 
@@ -202,6 +203,7 @@ Manages Hadoop jobs
 - Airflow
     - https://github.com/apache/airflow
     - https://airflow.apache.org/docs/stable/howto/initialize-database.html
+    - https://medium.com/datareply/integrating-slack-alerts-in-airflow-c9dcd155105
 - Luigi
     - https://github.com/spotify/luigi
     - https://luigi.readthedocs.io/en/stable/api/luigi.contrib.html
@@ -217,6 +219,7 @@ Manages Hadoop jobs
     - https://medium.com/bigdatarepublic/a-review-of-netflixs-metaflow-65c6956e168d
 - Kedro
     - https://github.com/quantumblacklabs/kedro
+    - https://kedro.readthedocs.io/en/latest/03_tutorial/04_create_pipelines.html
     - https://kedro.readthedocs.io/en/latest/kedro.io.html#data-sets
     - https://medium.com/mhiro2/building-pipeline-with-kedro-for-ml-competition-63e1db42d179
 - PipelineX
