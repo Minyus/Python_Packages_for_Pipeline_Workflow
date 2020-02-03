@@ -44,7 +44,6 @@ Luigi enables you to define your pipeline by child classes of `Task` with 3 clas
 - Support automatic pipeline resuming option using the intermediate data files in local or cloud (AWS, GCP, Azure) or databases as defined in `Task.output` method using `Target` class.
 - You can write code so any data can be passed between dependent tasks.
 - Provides GUI with features including DAG visualization, execution progress monitoring.
-- Supports Hadoop.
 
 ### Cons:
 
