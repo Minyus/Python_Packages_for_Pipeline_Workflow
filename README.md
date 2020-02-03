@@ -12,6 +12,7 @@ Disclaimer: I'm the developer of PipelineX.
 
 https://github.com/apache/airflow
 
+Released in 2015 by Airbnb.
 Airflow enables you to define your DAG (workflow) of tasks in Python code (an independent Python module).
 
 (Optionally, unofficial plugins such as [dag-factory](https://github.com/ajbosco/dag-factory) enables you to define DAG in YAML.)
@@ -37,6 +38,7 @@ Airflow might be good for production, but apparently not for rapid experimentati
 
 https://github.com/spotify/luigi
 
+Released in 2012 by Spotify.
 Luigi enables you to define your pipeline by child classes of `Task` with 3 class methods (`requires`, `output`, `run`) in Python code.
 
 ### Pros:
@@ -58,6 +60,7 @@ Luigi enables you to define your pipeline by child classes of `Task` with 3 clas
 
 https://github.com/m3dev/gokart
 
+Released in Dec 2018 by M3.
 Gokart works on top of Luigi. 
 
 ### Pros: 
@@ -77,6 +80,7 @@ Gokart works on top of Luigi.
 
 https://github.com/Netflix/metaflow
 
+Released in Dec 2019 by Netflix.
 Metaflow enables you to define your pipeline as a child class of `FlowSpec` that includes class methods with `step` decorators in Python code.
 
 ### Pros:
@@ -97,6 +101,7 @@ Metaflow enables you to define your pipeline as a child class of `FlowSpec` that
 
 https://github.com/quantumblacklabs/kedro
 
+Released in May 2019 by QuantumBlack/McKinsey & Company.
 Kedro enables you to define pipelines in Python code (an independent Python module).
 
 ### Pros:
@@ -118,6 +123,7 @@ Kedro enables you to define pipelines in Python code (an independent Python modu
 
 https://github.com/Minyus/pipelinex
 
+Released in Nov 2019 by a Kedro user (me).
 PipelineX works on top of Kedro. 
 
 PipelineX enables you to define your pipeline in YAML (an independent YAML file).
