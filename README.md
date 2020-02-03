@@ -176,26 +176,26 @@ In addition to Kedro's advantages:
 
 https://github.com/argoproj/argo
 
-Uses Kubernetes/Docker for each task in the pipeline
+Uses Kubernetes to run pipelines
 
 ### Kubeflow Pipelines
 
 https://github.com/kubeflow/pipelines
 
-Works on top of Argo
+Works on top of Argo.
 
 ### Oozie
 
 https://github.com/apache/oozie
 
-Manages Hadoop jobs
+Manages Hadoop jobs.
 
 
 ### Azkaban
 
 https://github.com/azkaban/azkaban
 
-Manages Hadoop jobs
+Manages Hadoop jobs.
 
 
 ## References:
