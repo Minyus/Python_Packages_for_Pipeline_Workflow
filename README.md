@@ -102,7 +102,8 @@ Kedro enables you to define pipelines in Python code (an independent Python modu
 
 ### Pros:
 
-- Provides built-in file/database access (read/write) wrappers as `DataSet` classes for CSV, Pickle, YAML, JSON, Parquet, Excel, and text in local or cloud (S3 in AWS, GCS in GCP), as well as SQL, spark, feather, and more in contrib. 
+- Provides built-in file/database access (read/write) wrappers as `DataSet` classes for 
+CSV, Pickle, YAML, JSON, Parquet, Excel, and text in local or cloud (S3 in AWS, GCS in GCP), as well as SQL, Spark, etc. 
 - Any data format support can be added by users. 
 - Pipeline definition, task processing (Transform of ETL), and data access (Extract&Load of ETL) are independent and modular. 
 You can easily reuse in future projects.
