@@ -25,10 +25,9 @@ Airflow enables you to define your DAG (workflow) of tasks in Python code (an in
 
 ### Cons:
 
-- Data can be shared among dependent tasks only via a database (using features called "XCom", "Variable", or "Hook").
-- You need to manage passing/sharing of unstructured data (e.g. image, video, pickle, etc.), if any, outside of Airflow.
-- Does not support automatic pipeline resuming option using the intermediate data files.
-- You need to write file/database access (read/write) code. 
+- Not designed to pass data between dependent tasks without using a database. 
+There is no good way to pass unstructured data (e.g. image, video, pickle, etc.) between dependent tasks in Airflow.
+- You need to write file access (read/write) code. 
 - Does not support automatic pipeline resuming option using the intermediate data files or databases.
 
 Airflow might be good for production, but apparently not for rapid experimentation. 
