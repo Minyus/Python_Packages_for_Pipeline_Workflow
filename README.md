@@ -159,16 +159,16 @@ In addition to Kedro's advantages:
 | Easiness/flexibility to define DAG                                      |         |       | 👍      | 👍        | 👍     | 👍👍             |
 | Modularity of DAG definition                                            | 👍👍       |       |        |          | 👍👍     | 👍👍               |
 | Unstructured data can be passed between tasks                           |         | 👍👍     | 👍👍      | 👍👍        | 👍👍     | 👍👍               |
-| Built\-in file/database availability check wrappers                     |         | 👍👍   | 👍👍    |          | 👍👍   | 👍👍             |
-| Built\-in file/database operation (read/write) wrappers                 |         |       | 👍      |          | 👍👍   | 👍👍             |
-| Modularity, reusability, testability of file/database operation         |         |       | 👍      |          | 👍👍   | 👍👍             |
-| Automatic pipeline resuming option using the intermediate data files    |         | 👍👍     | 👍👍      |          |       | 👍👍               |
-| Force rerun of tasks upon parameter change                              |         |       | 👍👍      |          |       |                 |
+| Built\-in various data (file/database) existence check wrappers         |         | 👍👍   | 👍👍    |          | 👍👍   | 👍👍             |
+| Built\-in various data (file/database) operation (read/write) wrappers  |         |       | 👍      |          | 👍👍   | 👍👍             |
+| Modularity, reusability, testability of data operation                  |         |       | 👍      |          | 👍👍   | 👍👍             |
+| Automatic resuming option by detecting the intermediate data            |         | 👍👍     | 👍👍      |          |       | 👍👍               |
+| Force rerun of tasks by detecting parameter change                      |         |       | 👍👍      |          |       |                 |
 | Save parameters for experiments                                         |         |       | 👍👍      |          |       | 👍👍               |
 | Parallel execution                                                      | 👍       | 👍     | 👍      | 👍        | 👍     | 👍               |
 | Distributed parallel execution with Celery                              | 👍👍       |       |        |          |       |                 |
 | Visualization of DAG                                                    | 👍👍       | 👍     | 👍      |          | 👍     | 👍               |
-| Monitoring in GUI                                                       | 👍👍     | 👍     | 👍      |          |       |                 |
+| Execution status monitoring in GUI                                             | 👍👍     | 👍     | 👍      |          |       |                 |
 | Scheduling, Triggering in GUI                                           | 👍       |       |        |          |       |                 |
 | Notification to Slack                                                   | 👍       |       | 👍      |          |       |                 |
 
