@@ -87,8 +87,7 @@ Metaflow enables you to define your pipeline as a child class of `FlowSpec` that
 ### Cons:
 
 - You need to write file/database access (read/write) code.
-- Pipeline definition is not modular. You need to modify the task classes to reuse in future projects.
-- Each Task class will be the project-specific and it will be difficult to reuse the Luigi tasks in future projects without modifying.
+- Pipeline definition, task processing (Transform of ETL), and data access (Extract&Load of ETL) are tightly coupled and not modular. You need to modify the task classes to reuse in future projects.
 - Does not support GUI. 
 - Not much support for GCP & Azure.
 - Does not support automatic pipeline resuming option using the intermediate data files or databases.
