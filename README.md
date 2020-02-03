@@ -49,7 +49,6 @@ Luigi enables you to define your pipeline by child classes of `Task` with 3 clas
 
 - You need to write file/database access (read/write) code.
 - Pipeline definition is not modular. You need to modify the task classes to reuse in future projects.
-- You may feel it is not intuitive to pass multiple data objects between tasks.
 
 
 ## Gokart
