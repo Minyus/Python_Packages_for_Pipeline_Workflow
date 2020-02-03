@@ -31,8 +31,6 @@ There is no good way to pass unstructured data (e.g. image, video, pickle, etc.)
 - You need to write file access (read/write) code. 
 - Does not support automatic pipeline resuming option using the intermediate data files or databases.
 
-Airflow might be good for production, but apparently not for rapid experimentation. 
-
 
 ## Luigi
 
