@@ -127,6 +127,8 @@ PipelineX works on top of Kedro and MLflow.
 PipelineX enables you to define your pipeline in YAML (an independent YAML file).
 
 ### Pros:
+
+In addition to Kedro's advantages:
 - Supports automatic pipeline resuming option using the intermediate data files or databases.
 - Optional syntactic sugar for Kedro Pipeline. (e.g. Sequential API similar to PyTorch (`torch.nn.Sequential`) and Keras (`tf.keras.Sequential`))
 - Optional syntactic sugar for Kedro `DataSet` catalog. (e.g. Use file name in the file path as the dataset instance name)
@@ -137,6 +139,9 @@ PipelineX enables you to define your pipeline in YAML (an independent YAML file)
 - Lean project template compared with pure Kedro.
 
 ### Cons:
+
+- GUI ([kedro-viz](https://github.com/quantumblacklabs/kedro-viz)) does not provide execution progress monitoring feature.
+- Package dependencies which are not used in many cases (e.g. pyarrow) are included in the `requirements.txt`.
 - PipelineX is developed and maintained by an individual (me) at this moment.
 
 
