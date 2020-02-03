@@ -12,7 +12,9 @@ Disclaimer: I'm the developer of PipelineX.
 
 https://github.com/apache/airflow
 
-DAG (workflow) of tasks is defined by Python code (or optionally YAML using unofficial plugins such as dag-factory (https://github.com/ajbosco/dag-factory)).
+Airflow enables you to define your DAG (workflow) of tasks in Python code (an independent Python module).
+
+(Optionally, unofficial plugins such as [dag-factory](https://github.com/ajbosco/dag-factory) enables you to define DAG in YAML.)
 
 ### Pros:
 
@@ -37,7 +39,7 @@ Airflow might be good for production, but apparently not for rapid experimentati
 
 https://github.com/spotify/luigi
 
-Pipeline is defined by child classes of `Task` with 3 defined class methods (`requires`, `output`, `run`) in Python code.
+Luigi enables you to define your pipeline by child classes of `Task` with 3 class methods (`requires`, `output`, `run`) in Python code.
 
 ### Pros:
 
@@ -60,8 +62,6 @@ https://github.com/m3dev/gokart
 
 Gokart works on top of Luigi. 
 
-Pipeline is defined by task class methods (`requires`, `output`, `run`) in Python code.
-
 ### Pros: 
 
 - Provides built-in file access (read/write) wrappers as `FileProcessor` classes for pickle, npz, gz, txt, csv, tsv, json, xml.
@@ -79,7 +79,7 @@ Pipeline is defined by task class methods (`requires`, `output`, `run`) in Pytho
 
 https://github.com/Netflix/metaflow
 
-Pipeline is defined as a child class `FlowSpec` with class methods with `step` decorators and call `next` method in the end to specify the next task in Python code.
+Metaflow enables you to define your pipeline as a child class of `FlowSpec` that includes class methods with `step` decorators in Python code.
 
 ### Pros:
 
@@ -99,15 +99,15 @@ Pipeline is defined as a child class `FlowSpec` with class methods with `step` d
 
 https://github.com/quantumblacklabs/kedro
 
-Pipeline is defined in Python code (an independent Python module).
+Kedro enables you to define pipelines in Python code (an independent Python module).
 
 ### Pros:
 
-- Kedro provides built-in file access (read/write) wrappers as `DataSet` classes for CSV, Pickle, YAML, JSON, Parquet, Excel, and text in local or cloud (S3 in AWS, GCS in GCP), as well as SQL, spark, feather, and more in contrib. 
+- Provides built-in file access (read/write) wrappers as `DataSet` classes for CSV, Pickle, YAML, JSON, Parquet, Excel, and text in local or cloud (S3 in AWS, GCS in GCP), as well as SQL, spark, feather, and more in contrib. 
 - Any data format support can be added by users and is easily reusable in future projects. 
-- File access functionality is modular; independent from processing functions. Can be configured in YAML (`DataCatalog`).
+- File access (read/write) functionality is modular; independent from processing functions. Can be configured in YAML (`DataCatalog`).
 - Pipeline definition is modular; independent from processing functions.
-- Pipelines can be nested.
+- Pipelines can be nested. (A pipeline can be used as sub-pipeline. )
 - GUI (`kedro-viz`) provides DAG visualization feature.
 
 ### Cons:
@@ -122,16 +122,16 @@ https://github.com/Minyus/pipelinex
 
 PipelineX works on top of Kedro. 
 
-Pipeline is defined in YAML or Python code.
+PipelineX enables you to define your pipeline in YAML (an independent YAML file).
 
 ### Pros:
 - Supports automatic pipeline resuming option using the intermediate data files or databases.
-- Optional syntactic sugar for Kedro Pipeline. (e.g. Sequential API similar to Keras & PyTorch)
-- Optional syntactic sugar for Kedro DataSet catalog. (e.g. Use file name in file path as the dataset instance name)
+- Optional syntactic sugar for Kedro Pipeline. (e.g. Sequential API similar to PyTorch (`torch.nn.Sequential`) and Keras (`tf.keras.Sequential`))
+- Optional syntactic sugar for Kedro `DataSet` catalog. (e.g. Use file name in the file path as the dataset instance name)
 - Backward-compatible to pure Kedro.
 - Integration with MLflow to save parameters, metrics, and other output artifacts such as models for each experiment to assure reproducibility.
 - Integration with common packages for Data Science: PyTorch, Ignite, pandas, OpenCV.
-- Additional `DataSet` including (a folder including) images useful for computer vision applications.
+- Additional `DataSet` including image set (a folder including images) useful for computer vision applications.
 - Lean project template compared with pure Kedro.
 
 ### Cons:
