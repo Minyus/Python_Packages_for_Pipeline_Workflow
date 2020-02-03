@@ -107,7 +107,7 @@ Kedro enables you to define pipelines in Python code (an independent Python modu
 - Pipeline definition, task processing (Transform of ETL), and data access (Extract&Load of ETL) are independent and modular. 
 You can easily reuse in future projects.
 - Pipelines can be nested. (A pipeline can be used as a sub-pipeline of another pipeline. )
-- GUI (`kedro-viz`) provides DAG visualization feature.
+- GUI ([kedro-viz](https://github.com/quantumblacklabs/kedro-viz)) provides DAG visualization feature.
 
 ### Cons:
 - Does not support automatic pipeline resuming option using the intermediate data files or databases.
