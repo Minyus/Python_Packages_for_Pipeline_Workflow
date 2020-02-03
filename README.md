@@ -179,7 +179,7 @@ In addition to Kedro's advantages:
 
 https://github.com/argoproj/argo
 
-Uses Kubernetes to run pipelines
+Uses Kubernetes to run pipelines.
 
 ### Kubeflow Pipelines
 
