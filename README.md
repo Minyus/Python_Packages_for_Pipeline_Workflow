@@ -18,7 +18,6 @@ Airflow enables you to define your DAG (workflow) of tasks in Python code (an in
 
 ### Pros:
 
-- Provides strong scheduling feature.
 - Provides rich GUI with features including DAG visualization, execution progress monitoring, scheduling, and triggering.
 - Provides distributed computing option (using Celery).
 - DAG definition is modular; independent from processing functions.
