@@ -3,8 +3,6 @@
 
 This article compares open-source Python packages for pipeline/workflow development: Airflow, Luigi, Gokart, Metaflow, Kedro, PipelineX.
 
-Disclaimer: I'm the developer of PipelineX.
-
 In this article, terms of "pipeline", "workflow", and "DAG" are used almost interchangeably. 
 
 ## Airflow 
@@ -125,6 +123,7 @@ You can easily reuse in future projects.
 https://github.com/Minyus/pipelinex
 
 Released in Nov 2019 by a Kedro user (me).
+
 PipelineX works on top of Kedro and MLflow.
 
 PipelineX enables you to define your pipeline in YAML (an independent YAML file).

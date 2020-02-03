@@ -2,10 +2,6 @@
 
 この記事では、Open-sourceのPipeline/Workflow開発用PythonパッケージのAirflow, Luigi, Gokart, Metaflow, Kedro, PipelineXを比較します。
 
-不正確な点がありましたら、お知らせください。
-
-Disclaimer: 私は PipelineX の開発者です。
-
 この記事では、"Pipeline"、"Workflow"、"DAG"の単語はほぼ同じ意味で使用しています。
 
 ## Airflow 
