@@ -132,7 +132,7 @@ In addition to Kedro's advantages:
 - Optional syntactic sugar for Kedro Pipeline. (e.g. Sequential API similar to PyTorch (`torch.nn.Sequential`) and Keras (`tf.keras.Sequential`))
 - Optional syntactic sugar for Kedro `DataSet` catalog. (e.g. Use file name in the file path as the dataset instance name)
 - Backward-compatible to pure Kedro.
-- Integration with MLflow to save parameters, metrics, and other output artifacts such as models for each experiment to assure reproducibility.
+- Integration with MLflow to save parameters, metrics, and other output artifacts such as models for each experiment.
 - Integration with common packages for Data Science: PyTorch, Ignite, pandas, OpenCV.
 - Additional `DataSet` including image set (a folder including images) useful for computer vision applications.
 - Lean project template compared with pure Kedro.
