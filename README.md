@@ -5,6 +5,31 @@ This article compares open-source Python packages for pipeline/workflow developm
 
 In this article, terms of "pipeline", "workflow", and "DAG" are used almost interchangeably. 
 
+## Summary
+
+- 👍: good
+- 👍👍: better
+
+| Package                                                                 | Airflow | Luigi&nbsp;&nbsp;&nbsp; | Gokart | Metaflow | Kedro&nbsp;&nbsp;&nbsp; | PipelineX       |
+|-------------------------------------------------------------------------|---------|-------|--------|----------|-------|-----------------|
+| Wrapped packages                                                        |         |       | Luigi  |          |       | Kedro, MLflow   |
+| Easiness/flexibility to define DAG                                      |         |       | 👍      | 👍        | 👍     | 👍👍             |
+| Modularity of DAG definition                                            | 👍👍       |       |        |          | 👍👍     | 👍👍               |
+| Unstructured data can be passed between tasks                           |         | 👍👍     | 👍👍      | 👍👍        | 👍👍     | 👍👍               |
+| Built\-in various data (file/database) existence check wrappers         |         | 👍👍   | 👍👍    |          | 👍👍   | 👍👍             |
+| Built\-in various data (file/database) operation (read/write) wrappers  |         |       | 👍      |          | 👍👍   | 👍👍             |
+| Modularity, reusability, testability of data operation                  |         |       | 👍      |          | 👍👍   | 👍👍             |
+| Automatic resuming option by detecting the intermediate data            |         | 👍👍     | 👍👍      |          |       | 👍👍               |
+| Force rerun of tasks by detecting parameter change                      |         |       | 👍👍      |          |       |                 |
+| Save parameters for experiments                                         |         |       | 👍👍      |          |       | 👍👍               |
+| Parallel execution                                                      | 👍       | 👍     | 👍      | 👍        | 👍     | 👍               |
+| Distributed parallel execution with Celery                              | 👍👍       |       |        |          |       |                 |
+| Visualization of DAG                                                    | 👍👍       | 👍     | 👍      |          | 👍     | 👍               |
+| Execution status monitoring in GUI                                             | 👍👍     | 👍     | 👍      |          |       |                 |
+| Scheduling, Triggering in GUI                                           | 👍       |       |        |          |       |                 |
+| Notification to Slack                                                   | 👍       |       | 👍      |          |       |                 |
+
+
 ## Airflow 
 
 https://github.com/apache/airflow
@@ -147,29 +172,6 @@ In addition to Kedro's advantages:
 - PipelineX is developed and maintained by an individual (me) at this moment.
 
 
-## Summary
-
-- 👍: good
-- 👍👍: better
-
-| Package                                                                 | Airflow | Luigi&nbsp;&nbsp;&nbsp; | Gokart | Metaflow | Kedro&nbsp;&nbsp;&nbsp; | PipelineX       |
-|-------------------------------------------------------------------------|---------|-------|--------|----------|-------|-----------------|
-| Wrapped packages                                                        |         |       | Luigi  |          |       | Kedro, MLflow   |
-| Easiness/flexibility to define DAG                                      |         |       | 👍      | 👍        | 👍     | 👍👍             |
-| Modularity of DAG definition                                            | 👍👍       |       |        |          | 👍👍     | 👍👍               |
-| Unstructured data can be passed between tasks                           |         | 👍👍     | 👍👍      | 👍👍        | 👍👍     | 👍👍               |
-| Built\-in various data (file/database) existence check wrappers         |         | 👍👍   | 👍👍    |          | 👍👍   | 👍👍             |
-| Built\-in various data (file/database) operation (read/write) wrappers  |         |       | 👍      |          | 👍👍   | 👍👍             |
-| Modularity, reusability, testability of data operation                  |         |       | 👍      |          | 👍👍   | 👍👍             |
-| Automatic resuming option by detecting the intermediate data            |         | 👍👍     | 👍👍      |          |       | 👍👍               |
-| Force rerun of tasks by detecting parameter change                      |         |       | 👍👍      |          |       |                 |
-| Save parameters for experiments                                         |         |       | 👍👍      |          |       | 👍👍               |
-| Parallel execution                                                      | 👍       | 👍     | 👍      | 👍        | 👍     | 👍               |
-| Distributed parallel execution with Celery                              | 👍👍       |       |        |          |       |                 |
-| Visualization of DAG                                                    | 👍👍       | 👍     | 👍      |          | 👍     | 👍               |
-| Execution status monitoring in GUI                                             | 👍👍     | 👍     | 👍      |          |       |                 |
-| Scheduling, Triggering in GUI                                           | 👍       |       |        |          |       |                 |
-| Notification to Slack                                                   | 👍       |       | 👍      |          |       |                 |
 
 
 ## Platform-specific packages
