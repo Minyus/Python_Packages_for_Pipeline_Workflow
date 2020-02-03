@@ -98,8 +98,11 @@ Metaflow enables you to define your pipeline as a child class of `FlowSpec` that
 
 https://github.com/quantumblacklabs/kedro
 
-Released in May 2019 by QuantumBlack/McKinsey & Company.
-Kedro enables you to define pipelines using `Pipeline` class in Python code (an independent Python module).
+Released in May 2019 by QuantumBlack, part of McKinsey & Company.
+
+Kedro enables you to define pipelines using list of `node` functions with 3 arguments 
+(`func`: task processing function, `inputs`: input data name (list or dict if multiple), `outputs`: output data name (list or dict if multiple)) 
+in Python code (an independent Python module).
 
 ### Pros:
 

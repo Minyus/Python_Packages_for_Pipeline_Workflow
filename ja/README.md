@@ -104,8 +104,11 @@ Metaflowは、Pythonコードで、`step` デコレータ付きのクラスメ�
 
 https://github.com/quantumblacklabs/kedro
 
-2019年5月にQuantumBlack/McKinsey社からリリースされました。
-Kedroは、Pythonコード（独立したPythonモジュール）でPipelineを定義します。
+2019年5月にMcKinseyの子会社のQuantumBlack社からリリースされました。
+
+Kedroは、Pythonコード（独立したPythonモジュール）で、3つの引数
+(`func`: タスク処理関数, `inputs`: 入力データ名（複数の場合はlist or dict）, `outputs`: 出力データ名（複数の場合はlist or dict）) 
+を持つ`node` 関数のリストによりPipelineを定義します。
 
 ### 良い点:
 
