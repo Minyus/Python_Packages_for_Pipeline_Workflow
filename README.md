@@ -141,7 +141,7 @@ In addition to Kedro's advantages:
 ### Cons:
 
 - GUI ([kedro-viz](https://github.com/quantumblacklabs/kedro-viz)) does not provide execution progress monitoring feature.
-- Package dependencies which are not used in many cases (e.g. pyarrow) are included in the `requirements.txt`.
+- Package dependencies which are not used in many cases (e.g. pyarrow) are included in the `requirements.txt` of Kedro.
 - PipelineX is developed and maintained by an individual (me) at this moment.
 
 
