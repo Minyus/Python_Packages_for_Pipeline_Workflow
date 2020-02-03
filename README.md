@@ -61,7 +61,7 @@ Gokart works on top of Luigi.
 ### Pros: 
 
 - Provides built-in file access (read/write) wrappers as `FileProcessor` classes for pickle, npz, gz, txt, csv, tsv, json, xml.
-- Save parameters for each experiment to assure reproducibility. Viewer called `thunderbolt` (https://github.com/m3dev/thunderbolt) can be used.
+- Save parameters for each experiment to assure reproducibility. Viewer called [thunderbolt](https://github.com/m3dev/thunderbolt) can be used.
 - Rerun tasks upon parameter change based on hash string unique to the parameter set in each intermediate file name.
 - Syntactic sugar for Luigi's `requires` class method using class decorator. 
 
