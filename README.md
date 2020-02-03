@@ -111,7 +111,7 @@ You can easily reuse in future projects.
 
 ### Cons:
 - Does not support automatic pipeline resuming option using the intermediate data files or databases.
-- GUI (`kedro-viz`) does not provide execution progress monitoring feature.
+- GUI ([kedro-viz](https://github.com/quantumblacklabs/kedro-viz)) does not provide execution progress monitoring feature.
 - Kedro installs package dependencies which are not used in many cases (e.g. pyarrow) as defined in the requirements.txt.
 
 
