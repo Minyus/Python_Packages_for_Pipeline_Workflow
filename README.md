@@ -7,6 +7,7 @@ Please kindly let me know if you find anything inaccurate.
 
 Disclaimer: I'm the developer of PipelineX.
 
+In this article, terms of "pipeline", "workflow", and "DAG" are used almost interchangeably. 
 
 ## Airflow 
 
