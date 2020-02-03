@@ -120,7 +120,7 @@ You can easily reuse in future projects.
 https://github.com/Minyus/pipelinex
 
 Released in Nov 2019 by a Kedro user (me).
-PipelineX works on top of Kedro. 
+PipelineX works on top of Kedro and MLflow.
 
 PipelineX enables you to define your pipeline in YAML (an independent YAML file).
 
