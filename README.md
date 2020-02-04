@@ -35,6 +35,7 @@ In this article, terms of "pipeline", "workflow", and "DAG" are used almost inte
 https://github.com/apache/airflow
 
 Released in 2015 by Airbnb.
+
 Airflow enables you to define your DAG (workflow) of tasks in Python code (an independent Python module).
 
 (Optionally, unofficial plugins such as [dag-factory](https://github.com/ajbosco/dag-factory) enables you to define DAG in YAML.)
@@ -60,6 +61,7 @@ There is no good way to pass unstructured data (e.g. image, video, pickle, etc.)
 https://github.com/spotify/luigi
 
 Released in 2012 by Spotify.
+
 Luigi enables you to define your pipeline by child classes of `Task` with 3 class methods (`requires`, `output`, `run`) in Python code.
 
 ### Pros:
@@ -79,6 +81,7 @@ Luigi enables you to define your pipeline by child classes of `Task` with 3 clas
 https://github.com/m3dev/gokart
 
 Released in Dec 2018 by M3.
+
 Gokart works on top of Luigi. 
 
 ### Pros: 
@@ -102,6 +105,7 @@ This feature is useful for experimentation with various parameter sets.
 https://github.com/Netflix/metaflow
 
 Released in Dec 2019 by Netflix.
+
 Metaflow enables you to define your pipeline as a child class of `FlowSpec` that includes class methods with `step` decorators in Python code.
 
 ### Pros:
