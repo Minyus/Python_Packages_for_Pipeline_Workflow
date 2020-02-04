@@ -87,9 +87,11 @@ Gokart works on top of Luigi.
 ### Pros: 
 
 In addition to Luigi's advantages:
+- Can split task processing (Transform of ETL) from pipeline definition using `TaskInstanceParameter` so you can easily reuse them 
+in future projects.
 - Provides built-in file access (read/write) wrappers as `FileProcessor` classes for pickle, npz, gz, txt, csv, tsv, json, xml.
-- Save parameters for each experiment to assure reproducibility. Viewer called [thunderbolt](https://github.com/m3dev/thunderbolt) can be used.
-- Rerun tasks upon parameter change based on hash string unique to the parameter set in each intermediate file name. 
+- Saves parameters for each experiment to assure reproducibility. Viewer called [thunderbolt](https://github.com/m3dev/thunderbolt) can be used.
+- Reruns tasks upon parameter change based on hash string unique to the parameter set in each intermediate file name. 
 This feature is useful for experimentation with various parameter sets.
 - Syntactic sugar for Luigi's `requires` class method using class decorator. 
 - Supports Slack notification.
@@ -97,7 +99,6 @@ This feature is useful for experimentation with various parameter sets.
 ### Cons:
 
 - Supported data formats for file access wrappers are limited. You need to write file/database access (read/write) code to use unsupported formats.
-- Pipeline definition and task processing (Transform of ETL) are tightly coupled and not modular. You need to modify the task classes to reuse in future projects.
 
 
 ## Metaflow
