@@ -10,8 +10,9 @@ In this article, terms of "pipeline", "workflow", and "DAG" are used almost inte
 - 👍: good
 - 👍👍: better
 
-| Package                                                                 | Airflow | Luigi&nbsp;&nbsp;&nbsp; | Gokart | Metaflow | Kedro&nbsp;&nbsp;&nbsp; | PipelineX       |
+| Package                                                          | Airflow | Luigi&nbsp;&nbsp;&nbsp; | Gokart | Metaflow | Kedro&nbsp;&nbsp;&nbsp; | PipelineX |
 |-------------------------------------------------------------------------|---------|-------|--------|----------|-------|-----------------|
+| Developer, Maintainer                                             |  Airbnb, Apache | Spotify | M3 | Netflix | Quantum-Black (McKinsey) | Yusuke Minami |
 | Wrapped packages                                                        |         |       | Luigi  |          |       | Kedro, MLflow   |
 | Easiness/flexibility to define DAG                                      |         |       | 👍      | 👍        | 👍     | 👍👍             |
 | Modularity of DAG definition                                            | 👍👍       |       |        |          | 👍👍     | 👍👍               |
