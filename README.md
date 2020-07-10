@@ -180,7 +180,7 @@ In addition to Kedro's advantages:
 
 
 
-## Platform-specific packages
+## Platform-specific options
 
 ### Argo
 
@@ -206,6 +206,14 @@ Manages Hadoop jobs.
 https://github.com/azkaban/azkaban
 
 Manages Hadoop jobs.
+
+### GitLab CI/CD
+
+https://docs.gitlab.com/ee/ci/
+
+- Runs pipelines defined in YAML.
+- Supports triggering by git push, CRON-style scheduling, and manual clicking.
+- Supports Docker containers.
 
 
 ## References
